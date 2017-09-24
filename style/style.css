@@ -1,0 +1,216 @@
+
+*{
+  /*border: 1px grey solid;*/
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'PT Serif', serif;
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Khula', sans-serif;
+    font-weight: 300;
+}
+p,ul{
+    line-height: 1.75;
+
+}
+[class*=grid-]{
+  margin: 0;
+}
+/* IMAGES */
+img{
+  max-width: 100%;
+}
+
+#oregano{
+  position: absolute;
+  right: -300px;
+  top: 70%;
+  width: 500px;
+  height: auto;
+  margin-top: -100px;
+  z-index: 4;
+}
+
+#tomato{
+  position: absolute;
+  left: 300px;
+  top: 30px;
+  width: 220px;
+  height: auto;
+  z-index: 4;
+}
+
+
+#tomato1{
+  position: absolute;
+  left: 100px;
+  top: 30px;
+  width: 320px;
+  height: auto;
+  z-index: 4;
+}
+
+.menu{
+
+}
+
+body{
+  width: 100%;
+}
+
+section{
+  padding: 5%;
+}
+
+h1{
+  text-align: center;
+}
+
+/* HEADER */
+
+
+/* HELPERS */
+.text-align-right{
+  text-align: right;
+}
+
+header{
+  z-index: 4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 70px;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0,0,0,.75);
+}
+/*foot is always going to be there*/
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  padding: 20px 0;
+  background-color: black;
+  text-align: center;
+  z-index: 4;
+}
+
+
+nav{
+
+}
+header a, footer a{
+  background-color: white;
+  color: black;
+  padding: 6px 12px;
+  display: inline-block;
+  margin: 0 4px;
+  border-radius: 7px;
+  text-decoration: none;
+
+}
+
+.menu-text{
+  border: 3px solid black;
+  padding: 15%;
+}
+
+/* Mobile menu */
+
+#mobile-menu{
+display: none;
+background-color: pink;
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+z-index: 9999;
+}
+
+#mobile-menu.mobile-menu-visible{
+  display: flex;
+}
+
+#mobile-menu a{
+  text-align: center;
+}
+
+#hamburger{
+  display: none;
+}
+
+@media all and (max-width: 768px){
+
+  #hamburger{
+    display: block;
+  }
+  header nav{
+    display: none !important;
+  }
+
+}
+
+header a:hover, footer a:hover{
+  background-color: black;
+  color: white;
+}
+
+
+.saute{
+  background-image: url("https://cdn.firstwefeast.com/assets/2014/09/3-eggs_heat.gif");
+  background-position:center;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+}
+.saute .col-12{
+  z-index: 2;
+}
+#overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+#content{
+  padding: 70px 0 0 0;
+}
+
+.about{
+  text-align: center;
+}
+
+form{
+  text-align: center;
+}
+form button,
+form label,
+form input,
+form textarea{
+  display: inline-block;
+  width: 50%;
+  padding: 20px;
+}
+
+form label{
+  font-weight: bold;
+}
+
+.fluid-map{
+  width: 100%;
+  height: 500px;
+}
